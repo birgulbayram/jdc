@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<body>
+    <div class="container">
+        <h5 id="headerText">The Tool to Learn</h5>
+        <hr>
+        <div class="sorular" id="s1">
+            <p><b>1. </b>Termino „neįgalus žmogus“ vartojimas yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="0" name="answer0" onclick="yanlisCevap(this.id)">
+            <label for="0"> TAIP</label>
+
+            <input type="radio" id="0" name="answer0" onclick="dogruCevap(this.id)">
+            <label for="0"> NE</label>
+
+            <div id="alert0" class="alert alert-primary collapse">
+                <a href="#" class="close" id="0" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader0">Answer</strong> <span id="alertBody0">Description</span>
+            </div>
+        </div>
+
+        <div class="sorular" id="s2">
+            <p><b>2. </b>Įtraukioji kalba – tai kalba, kuria siekiama išvengti žmonių įžeidimo ar žeminimo. Tokia kalba padeda sukurti saugią ir atvirą aplinką, kurioje visi bendraujantieji žino, kad į pašnekovą nebus žiūrima iš aukšto dėl to, kad jis yra toks, koks yra.</p>
+
+            <input type="radio" id="1" name="answer1" onclick="dogruCevap(this.id)">
+            <label for="1"> TAIP</label>
+
+            <input type="radio" id="1" name="answer1" onclick="yanlisCevap(this.id)">
+            <label for="1"> NE</label>
+
+            <div id="alert1" class="alert alert-primary collapse">
+                <a href="#" class="close" id="1" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader1">Answer</strong> <span id="alertBody1">Description</span>
+            </div>
+        </div>
+        
+        <div class="sorular" id="s3">
+            <p><b>3. </b>Sakinys „Asmenims su negalia riekia įdėti daug pastangų, siekiant išsigydyti savo negalią“ yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="2" name="answer2" onclick="yanlisCevap(this.id)">
+            <label for="2"> TAIP</label>
+
+            <input type="radio" id="2" name="answer2" onclick="dogruCevap(this.id)">
+            <label for="2"> NE</label>
+
+            <div id="alert2" class="alert alert-primary collapse">
+                <a href="#" class="close" id="2" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader2">Answer</strong> <span id="alertBody2">Description</span>
+            </div>
+        </div>
+
+        <div class="sorular" id="s4">
+            <p><b>4. </b>Padrąsinantis sakinys “Šaunuolis - Tu įveikei savo negalią“ yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="3" name="answer3" onclick="yanlisCevap(this.id)">
+            <label for="3"> TAIP</label>
+
+            <input type="radio" id="3" name="answer3" onclick="dogruCevap(this.id)">
+            <label for="3"> NE</label>
+
+            <div id="alert3" class="alert alert-primary collapse">
+                <a href="#" class="close" id="3" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader3">Answer</strong> <span id="alertBody3">Description</span>
+            </div>
+        </div>
+        
+        <div class="sorular" id="s5">
+            <p><b>5. </b>Termino „neįgalus žmogus“ vartojimas yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="4" name="answer4" onclick="yanlisCevap(this.id)">
+            <label for="4"> TAIP</label>
+
+            <input type="radio" id="4" name="answer4" onclick="dogruCevap(this.id)">
+            <label for="4"> NE</label>
+
+            <div id="alert4" class="alert alert-primary collapse">
+                <a href="#" class="close" id="4" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader4">Answer</strong> <span id="alertBody4">Description</span>
+            </div>
+        </div>
+        
+        <div class="sorular" id="s6">
+            <p><b>6. </b>Sakinys „Penki daunai ir du silpnaregiai bus šiandien apdovanoti už puikius darbo rezultatus“ yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="5" name="answer5" onclick="yanlisCevap(this.id)">
+            <label for="5"> TAIP</label>
+
+            <input type="radio" id="5" name="answer5" onclick="dogruCevap(this.id)">
+            <label for="5"> NE</label>
+
+            <div id="alert5" class="alert alert-primary collapse">
+                <a href="#" class="close" id="5" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader5">Answer</strong> <span id="alertBody5">Description</span>
+            </div>
+        </div>
+
+        <div class="sorular" id="s7">
+            <p><b>7. </b>Sakinys „Planuojamas įtraukus renginys, kuriame dalyvaus tiek normalūs žmonės, tiek žmonės su negalia“ yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="6" name="answer6" onclick="yanlisCevap(this.id)">
+            <label for="6"> TAIP</label>
+
+            <input type="radio" id="6" name="answer6" onclick="dogruCevap(this.id)">
+            <label for="6"> NE</label>
+
+            <div id="alert6" class="alert alert-primary collapse">
+                <a href="#" class="close" id="6" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader6">Answer</strong> <span id="alertBody6">Description</span>
+            </div>
+        </div>
+        
+        <div class="sorular" id="s8">
+            <p><b>8. </b>Sakinys „Sportinėse žaidynėse gerus rezultatus demonstravo ir neįgaliukai“ yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="7" name="answer7" onclick="yanlisCevap(this.id)">
+            <label for="7"> TAIP</label>
+
+            <input type="radio" id="7" name="answer7" onclick="dogruCevap(this.id)">
+            <label for="7"> NE</label>
+
+            <div id="alert7" class="alert alert-primary collapse">
+                <a href="#" class="close" id="7" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader7">Answer</strong> <span id="alertBody7">Description</span>
+            </div>
+        </div>
+        
+        <div class="sorular" id="s9">
+            <p><b>9. </b>Sakinys „Į projektą kviečiami skirtingų poreikių žmonės“ yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="8" name="answer8" onclick="yanlisCevap(this.id)">
+            <label for="8"> TAIP</label>
+
+            <input type="radio" id="8" name="answer8" onclick="dogruCevap(this.id)">
+            <label for="8"> NE</label>
+
+            <div id="alert8" class="alert alert-primary collapse">
+                <a href="#" class="close" id="8" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader8">Answer</strong> <span id="alertBody8">Description</span>
+            </div>
+        </div>
+        
+        <div class="sorular" id="s10">
+            <p><b>10. </b>Sakinys „Mano giminaitis debilas, todėl jis gauna pašalpą“ yra tinkamas ir atitinka įtraukiąjai kalbai keliamus reikalavimus.</p>
+
+            <input type="radio" id="9" name="answer9" onclick="yanlisCevap(this.id)">
+            <label for="9"> TAIP</label>
+
+            <input type="radio" id="9" name="answer9" onclick="dogruCevap(this.id)">
+            <label for="9"> NE</label>
+
+            <div id="alert9" class="alert alert-primary collapse">
+                <a href="#" class="close" id="9" onclick="closeAlert(this.id)">&times;</a>
+                <strong id="alertHeader9">Answer</strong> <span id="alertBody9">Description</span>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <div class="bannerLine"></div>
+
+    <script>
+        function closeAlert(btnID) {
+            $("#alert" + btnID).hide();
+        }
+
+        function dogruCevap(btnID) {
+            var alert = document.getElementById("alert" + btnID);
+            alert.setAttribute("class", "alert alert-success collapse")
+            var dogruAciklamalar = [
+                "Šaunuolis! Tinkamas terminas yra „asmuo (žmogus) su negalia“. Anglų kalboje tai vadinama people-first language. Ši kalba vartojama Neįgaliųjų teisių konvencijoje.",
+                "Šaunuolis! Įtraukioji kalba –tai abipusės pagarbos kalba.",
+                "Šaunuolis! Negalia yra būsena, o ne liga. Todėl  šių asmenų priskyrimas ligoniui ar vadinimas sergančiu yra įžeidžiantis.",
+                "Šaunuolis! Kovos metafora nėra tinkama ir gali sukelti neigiamų asociacijų. Negalia negali būti priimama kaip priešas, su kuriuo reikia kovoti.",
+                "Šaunuolis! Kalbėdami apie asmenį, turintį negalią, pirmiausia turėtumėte nurodyti žmogų, o ne negalią. Teisingas sakinys „Mūsų mokiniai, turintys negalią, dalyvaus tarptautiniame projekte“. Anglų kalboje tai vadinama people-first language.",
+                "Šaunuolis! Reikia vengti „diagnozės“ etiketės. Įžeidu asmenį su Dauno sindromu vadinti daunu.",
+                "Šaunuolis! Reikia vengti ženklinti žmones ir minėti asmens negalią. Turėtumėte sutelkti dėmesį į įgūdžius ar reikalavimus ir nurodyti asmens negalią tik tada, kai tai suteikia būtino aiškumo ar naudingos informacijos. Sakinys pats savaime segreguoja žmones, o ne sujungia bendram tikslui.",
+                "Šaunuolis! Mažybinių žodelių, sukeliančių užuojautą ir gailestį vartojimas menkina ir žemina asmenį",
+                "Šaunuolis! Mes visi turime skirtingus poreikius ir gebėjimus vienoje ar kitoje srityje. Todėl šis terminas nėra tikslus. „Asmuo su negalia“ yra tikslesnis ir neutralesnis terminas nei terminai  „specialiųjų poreikių“ „individualių poreikių“ , „skirtingų gebėjimų“.",
+                "Šaunuolis! Šiame sakinyje yra du neteisingai pavartoti žodžiai. Žodis debilas (lot. debilis - silpnas, bejėgis) yra ypatingai žeidžiantis.  Medicininėje literatūroje šis terminas reiškia asmenį, kuriam diagnozuota lengviausia intelekto sutrikimo forma. Jaunimo žodyne šis terminas kartais naudojamas apibūdinti žmogų, kuris nuo gimimo yra kvailas, keistas, skiriasi nuo kitų. Šnekamojoje kalboje šio termino rekomenduojama nevartoti. Žodį pašalpa patariam keisti žodžiu išmoka, nes šis žodis mažiau žeidžia asmens orumą."
+            ];
+
+
+            var alertHeader = document.getElementById("alertHeader" + btnID)
+            alertHeader.innerHTML = "Teisingas atsakymas ✔";
+
+
+            var alertBody = document.getElementById("alertBody" + btnID)
+            alertBody.innerHTML = dogruAciklamalar[btnID];
+            $("#alert" + btnID).show();
+        }
+
+        function yanlisCevap(btnID) {
+            var alert = document.getElementById("alert" + btnID);
+            alert.setAttribute("class", "alert alert-danger collapse")
+
+            var yanlisAciklamalar = [
+                "Mokykis įtraukiosios kalbos! → Tremino „neįgalus žmogus“ vartojimas yra įžeidžiantis,  pageidaujamas terminas yra „asmuo (žmogus) su negalia“. Anglų kalboje tai vadinama people-first language. Ši kalba vartojama Neįgaliųjų teisių konvencijoje.",
+                "Mokykis įtraukiosios kalbos! Įtraukioji kalba –tai abipusės pagarbos kalba.",
+                "Mokykis įtraukiosios kalbos! → Negalia yra būsena, o ne liga. Todėl  šių asmenų priskyrimas ligoniui ar vadinimas sergančiu yra įžeidžiantis.",
+                "Mokykis įtraukiosios kalbos! → Kovos metafora nėra tinkama ir gali sukelti neigiamų asociacijų. Negalia negali būti priimama kaip priešas, su kuriuo reikia kovoti.",
+                "Mokykis įtraukiosios kalbos! → Kalbėdami apie asmenį, turintį negalią, pirmiausia turėtumėte nurodyti žmogų, o ne negalią. Teisingas sakinys „Mūsų mokiniai, turintys negalią, dalyvaus tarptautiniame projekte“. Anglų kalboje tai vadinama people-first language.",
+                "Mokykis įtraukiosios kalbos! → Reikia vengti „diagnozės“ etiketės. Įžeidu asmenį su Dauno sindromu vadinti daunu.",
+                "Mokykis įtraukiosios kalbos! → Reikia vengti ženklinti žmones ir minėti asmens negalią. Turėtumėte sutelkti dėmesį į įgūdžius ar reikalavimus ir nurodyti asmens negalią tik tada, kai tai suteikia būtino aiškumo ar naudingos informacijos. Sakinys pats savaime segreguoja žmones, o ne sujungia bendram tikslui.",
+                "Mokykis įtraukiosios kalbos! → Mažybinių žodelių, sukeliančių užuojautą ir gailestį vartojimas menkina ir žemina asmenį.",
+                "Mokykis įtraukiosios kalbos! → Mes visi turime skirtingus poreikius ir gebėjimus vienoje ar kitoje srityje. Todėl šis terminas nėra tikslus. „Asmuo su negalia“ yra tikslesnis ir neutralesnis terminas nei terminai  „specialiųjų poreikių“ „individualių poreikių“ , „skirtingų gebėjimų“. ",
+                "Mokykis įtraukiosios kalbos! → Šiame sakinyje yra du neteisingai pavartoti žodžiai. Žodis debilas (lot. debilis - silpnas, bejėgis) yra ypatingai žeidžiantis.  Medicininėje literatūroje šis terminas reiškia asmenį, kuriam diagnozuota lengviausia intelekto sutrikimo forma. Jaunimo žodyne šis terminas kartais naudojamas apibūdinti žmogų, kuris nuo gimimo yra kvailas, keistas, skiriasi nuo kitų. Šnekamojoje kalboje šio termino rekomenduojama nevartoti. Žodį pašalpa patariam keisti žodžiu išmoka, nes šis žodis mažiau žeidžia asmens orumą."
+            ];
+
+            var alertHeader = document.getElementById("alertHeader" + btnID)
+            alertHeader.innerHTML = "Neteisingas atsakymas ❌";
+
+            var alertBody = document.getElementById('alertBody' + btnID)
+            alertBody.innerHTML = yanlisAciklamalar[btnID];
+            $("#alert" + btnID).show();
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body></html>

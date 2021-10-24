@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+body {
+    background-color: #ffffff;
+    height: 120vh;
+    background-image: url("bg1.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.bannerLine {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #f0a52f;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    z-index: 1;
+    margin-top: 50px;
+    background-color: #ffffff;
+    width: 900px;
+    padding-bottom: 5px;
+    border-radius: 10px 10px 0 0;
+    border-top: solid #fbba54 10px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+    transition: .2s all !important;
+
+}
+
+.alert {
+    transition: .2s all !important;
+}
+
+#headerText {
+    font-size: 27px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    color: #f39c12;
+    text-align: center;
+    margin-top: 15px;
+    cursor: default;
+}
+
+.sorular {
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.sorular h5 {
+    font-weight: bold;
+}
+
+.sorular input {}
+
+.sorular label {
+    margin-right: 20px;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: auto !important;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
