@@ -203,6 +203,11 @@
             var alertBody = document.getElementById("alertBody" + btnID)
             alertBody.innerHTML = dogruAciklamalar[btnID];
             $("#alert" + btnID).show();
+            
+            if (btnID == 9) {
+               var bitirBtn = document.getElementById("bitirBtn");
+               bitirBtn.className = "btn btn-primary bitirBtn bitirBtnShow";
+            }
         }
 
         function yanlisCevap(btnID) {
